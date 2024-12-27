@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct GroceryCategoryResponseDTO: Codable {
+public struct GroceryCategoryResponseDTO: Codable, @unchecked Sendable {
     public let id: UUID
     public let title: String
     public let colorCode: String
